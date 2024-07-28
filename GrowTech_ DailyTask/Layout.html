@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      .nav {
+        width: 100%;
+        height: 70px;
+        background: white;
+        color: black;
+        font-size: 25px;
+      }
+      button{
+        width: 90px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 20px;
+        background: green;
+        color: white;
+        border: none;
+      }
+      .secNav {
+        width: 100%;
+        height: 60px;
+        background: rgb(34, 31, 31);
+        color: white;
+        font-size: 25px;
+      }
+      div {
+        display: inline-block;
+        margin: 20px;
+        margin-left: 60px;
+      }
+      .div1 {
+        width: 100px;
+        height: 30px;
+        padding: 15px;
+        margin-top: auto;
+      }
+      .div1:hover {
+        background: black;
+      }
+      #css:active{
+        background: green;
+      }
+      .aside {
+        width: 300px;
+        height: 800px;
+        border: 2px solid black;
+        background-color: rgb(236, 235, 235);
+        border-radius: 5px;
+        overflow: scroll;
+        float: left;
+      }
+      .sideDiv {
+        width: 265px;
+        height: 40px;
+        margin-left: auto;
+        padding-left: 35px;
+        padding-top: 20px;
+        font-size: 25px;
+      }
+      .sideDiv:hover {
+        background: green;
+      }
+      .article{
+        width: 80%;
+        height: 500px;
+        padding: 20px;
+        float: right;
+      }
+      .div2{
+        background: #a2ec71;
+        height: 550px;
+        width: 60%x;
+      }
+      #one{
+        padding: 10px;
+        font-size: 50px;
+      }
+      h2{
+        font-size: 40px;
+        padding-left: 60px;
+        font-weight: 400;
+      }
+      ul, #two{
+        font-size: 25px;
+        padding-left: 90px;
+      }
+      .footer {
+        width: 100%;
+        height: 300px;
+        border: 2px solid black;
+        background: #000;
+        color: white;
+        clear: both;
+      }
+      .footDiv {
+        margin-top: 80px;
+        margin-left: 80px;
+        padding-top: 30px;
+        font-size: 30px;
+      }
+      p {
+        margin-left: 70px;
+        font-size: 20px;
+        word-spacing: 3px;
+        padding-right: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div>Tutorials</div>
+      <div>Exercises</div>
+      <div>Certificates</div>
+      <div>Services</div>
+      <div>Contact Us</div>
+      <div><button>SignUp</button></div>
+      <div><button>Log in</button></div>
+    </nav>
+    <nav class="secNav">
+      <div class="div1" id="css">CSS</div>
+      <div class="div1">Java</div>
+      <div class="div1">C/C++</div>
+      <div class="div1">HTML</div>
+      <div class="div1">JavaScript</div>
+      <div class="div1">C#</div>
+      <div class="div1">Python</div>
+      <div class="div1">MySQL</div>
+    </nav>
+    <aside class="aside">
+      <h1>HTML Tutorial</h1>
+      <div class="sideDiv">CSS Introduction</div>
+      <div class="sideDiv">CSS Syntax</div>
+      <div class="sideDiv">CSS Selectors</div>
+      <div class="sideDiv">CSS How TO</div>
+      <div class="sideDiv">CSS Comments</div>
+      <div class="sideDiv">CSS Colors</div>
+      <div class="sideDiv">CSS Backgrounds</div>
+      <div class="sideDiv">CSS Borders</div>
+      <div class="sideDiv">CSS Margins</div>
+      <div class="sideDiv">CSS padding</div>
+      <div class="sideDiv">CSS Box Model</div>
+    </aside>
+    <article class="article">
+    
+        <h1 id="one">CSS Introduction</h1>
+        <div class="div2">
+          <h2>What is CSS?</h2>
+        <ul>
+          <li>CSS stands for Cascading Style Sheets</li>
+          <li>
+            CSS describes how HTML elements are to be displayed on screen, paper,
+            or in other media
+          </li>
+          <li>
+            CSS saves a lot of work. It can control the layout of multiple web
+            pages all at once
+          </li>
+          <li>External stylesheets are stored in CSS files</li>
+        </ul>
+        <h2>Why Use CSS?</h2>
+        <h2 id="two">
+          CSS is used to define styles for your web pages, including the design,
+          layout and variations in display for different devices and screen sizes.
+        </h2>
+
+        </div>
+    </article>
+    <footer class="footer">
+      <div class="footDiv">SPACES</div>
+      <div class="footDiv">UPGRADE</div>
+      <div class="footDiv">AD-FREE</div>
+      <div class="footDiv">NEWSLETTER</div>
+      <div class="footDiv">GET CERTIFIED</div>
+      <div class="footDiv">CONTACT US</div>
+      <p>
+        W3Schools is optimized for learning and training. Examples might be
+        simplified to improve reading and learning. Tutorials, references, and
+        examples are constantly reviewed to avoid errors, but we cannot warrant
+        full correctness of all content. While using W3Schools, you agree to
+        have read and accepted our terms of use, cookie and privacy policy.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.ludo-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+}
+
+.home {
+    width: 100px;
+    height: 100px;
+}
+
+.red-home {
+    background-color: red;
+}
+
+.green-home {
+    background-color: green;
+}
+
+.yellow-home {
+    background-color: yellow;
+}
+
+.blue-home {
+    background-color: blue;
+}
+
+.path {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 33px);
+    grid-template-rows: repeat(3, 33px);
+    gap: 1px;
+}
+
+.path-cell {
+    width: 33px;
+    height: 33px;
+}
+
+.path-cell.red {
+    background-color: #ffcccc;
+}
+
+.path-cell.green {
+    background-color: #ccffcc;
+}
+
+.path-cell.yellow {
+    background-color: #ffffcc;
+}
+
+.path-cell.blue {
+    background-color: #ccccff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ludo-board">
+        <div class="home red-home"></div>
+        <div class="home green-home"></div>
+        <div class="home yellow-home"></div>
+        <div class="home blue-home"></div>
+        
+        <div class="path">
+            <!-- Red Path -->
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            <div class="path-cell red"></div>
+            
+            <!-- Green Path -->
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            <div class="path-cell green"></div>
+            
+            <!-- Yellow Path -->
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            <div class="path-cell yellow"></div>
+            
+            <!-- Blue Path -->
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+            <div class="path-cell blue"></div>
+        </div>
+    </div>
+</body>
+</html>

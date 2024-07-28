@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>       
+        .container{
+            width: 770px;
+            height: 770px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .one,.two, .three,.four{
+        width: 280px;
+        height: 280px;
+        border: 2px solid black;
+        }
+        .one{
+            margin-top: auto;
+            background-color: blue;
+        }
+        .two{
+            margin-left: 487px;
+            margin-top: -283px;
+            background-color: red;
+        }
+        .three{
+            margin-top: 206px;
+            background-color: yellow;
+            
+        }
+        .four{
+            margin-left: 487px;
+            margin-top: -283px;
+            background-color: green;
+        }
+        .a1,.a2,.a3,.a4{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 40px;
+            background-color: white;
+        }
+        .circle1,.circle2,.circle3,.circle4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            margin: auto;   
+        }
+        .circle1{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .circle2{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .circle3{
+            margin-right: 20px;
+            margin-top: -135px;
+        }
+        .circle4{
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        .a2>.circle1,.a2>.circle2,.a2>.circle3,.a2>.circle4{
+            background-color: red;
+        }
+        .a1>.circle1,.a1>.circle2,.a1>.circle3,.a1>.circle4{
+            background-color: blue;
+        }
+        .a3>.circle1,.a3>.circle2,.a3>.circle3,.a3>.circle4{
+            background-color: yellow;
+        }
+        .a4>.circle1,.a4>.circle2,.a4>.circle3,.a4>.circle4{
+            background-color: green;
+        }
+        .squre{
+            width: 210px;
+            height: 210px;
+            border: 2px solid;
+            margin: auto;
+            margin-top: -491px;
+            background: hwb(0 44% 0%);
+        }
+        .parent{
+       width: 276px;
+       height: 202px;
+       border: 2px solid black; 
+       position: absolute;
+       top: 345px;
+      }
+      #a1,#a2,#a3, #a4,#a5,#a6{
+        width: 46px;
+        height: 66px;
+        border: 2px solid black;
+        display: inline-block;
+        margin: -3px;
+      }
+      #a2, #a4,#a6{
+        background: blue;
+      }
+      .parent1{
+        width: 276px;
+       height: 202px;
+       border: 2px solid black; 
+       position: absolute;
+       top: 345px;
+    }
+    #a7,#a8,#a9,#a10,#a11,#a12{
+        width: 46px;
+        height: 66px;
+        border: 2px solid black;
+        display: inline-block;
+        position: relative;
+        left: 492px;
+        margin: -3px;
+    }
+    #a8,#a10,#a11{
+        background: green;
+    }
+    .parent2{
+        width: 276px;
+       height: 202px;
+       border: 2px solid black; 
+       position: absolute;
+       top: 345px;
+    }
+    #A1,#A2,#A3,#A4,#A5,#A6{
+        width: 70px;
+        height: 45px;
+        border: 2px solid black;
+        display: inline-block;
+        position: relative;
+        left: 280px;
+        top: -285px;
+        margin: -3px;
+    }
+    #A2,#A5{
+        background: red;
+    }
+    td{
+        width: 66px;
+        height: 42px;
+        border: 2px solid black;
+        display: inline-block;
+       position: relative;
+       left: 280px;
+       margin: -1px;
+    }
+    .yellow{
+        background: yellow;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <div class="container"> 
+            <div class="one">
+                <div class="a1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="a2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="a3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+            <div class="four">
+                <div class="a4">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+            <div class="squre"></div>
+
+            <div class="parent" id="pr2">
+                <div class="six" id="a1"></div>
+                <div class="six" id="a2"></div>
+                <div class="six" id="a3"></div>
+                <div class="six" id="a3"></div>
+                <div class="six" id="a5"></div>
+                <div class="six" id="a5"></div>
+                <div class="six" id="a1"></div>
+                <div class="six" id="a2"></div>
+                <div class="six" id="a4"></div>
+                <div class="six" id="a4"></div>
+                <div class="six" id="a6"></div>
+                <div class="six" id="a6"></div>
+                <div class="six" id="a1"></div>
+                <div class="six" id="a1"></div>
+                <div class="six" id="a3"></div>
+                <div class="six" id="a3"></div>
+                <div class="six" id="a5"></div>
+                <div class="six" id="a5"></div>
+            </div>
+               <table>
+                <tr>
+                    <td></td>
+                    <td class="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="yellow"></td>
+                    <td class="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               </table>
+               <div class="parent1" id="pr2">
+                <div class="six" id="a7"></div>
+                <div class="six" id="a7"></div>
+                <div class="six" id="a9"></div>
+                <div class="six" id="a9"></div>
+                <div class="six" id="a12"></div>
+                <div class="six" id="a12"></div>
+                <div class="six" id="a8"></div>
+                <div class="six" id="a8"></div>
+                <div class="six" id="a10"></div>
+                <div class="six" id="a10"></div>
+                <div class="six" id="a11"></div>
+                <div class="six" id="a12"></div>
+                <div class="six" id="a7"></div>
+                <div class="six" id="a7"></div>
+                <div class="six" id="a9"></div>
+                <div class="six" id="a9"></div>
+                <div class="six" id="a11"></div>
+                <div class="six" id="a12"></div>
+            </div>
+            <div class="parent2" id="pr2">
+                <div class="seven" id="A1"></div>
+                <div class="seven" id="A6"></div>
+                <div class="seven" id="A3"></div>
+                <div class="seven" id="A4"></div>
+                <div class="seven" id="A5"></div>
+                <div class="seven" id="A2"></div>
+                <div class="seven" id="A1"></div>
+                <div class="seven" id="A2"></div>
+                <div class="seven" id="A3"></div>
+                <div class="seven" id="A4"></div>
+                <div class="seven" id="A5"></div>
+                <div class="seven" id="A6"></div>
+                <div class="seven" id="A1"></div>
+                <div class="seven" id="A2"></div>
+                <div class="seven" id="A3"></div>
+                <div class="seven" id="A4"></div>
+                <div class="seven" id="A5"></div>
+                <div class="seven" id="A6"></div>
+            </div>
+    </div>
+</body>
+</html>
